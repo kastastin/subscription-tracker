@@ -6,7 +6,7 @@ if (!DB_URI) {
   throw new Error("Please define DB_URI env variable in .env.<development/production>.local");
 }
 
-async function connectToDatabase() {
+const connectToDatabase = async () => {
   try {
     await mongoose.connect(DB_URI);
 
@@ -15,6 +15,6 @@ async function connectToDatabase() {
     console.error(`🚨 Error connecting to database: ${error}`);
     process.exit(1);
   }
-}
+};
 
 export default connectToDatabase;
