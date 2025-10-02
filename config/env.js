@@ -9,6 +9,7 @@ export const {
   DB_URI,
   JWT_SECRET,
   JWT_EXPIRES_IN,
+  EMAIL_PASSWORD,
   ARCJET_KEY,
   ARCJET_ENV,
   QSTASH_URL,
